@@ -1,0 +1,139 @@
+.App {
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+  font-family: "Josefin Sans";
+}
+.img-meme {
+  margin-top: 1em;
+  max-width: 380px;
+  max-height: 300px;
+  border-radius: 5px;
+}
+.header {
+  background-color: #0d324d;
+  color: #ffffff;
+  width: 100%;
+  padding: 1em 0em;
+  position: fixed;
+  left: 0;
+}
+.meme-generator {
+  position: relative;
+  top: 10em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.meme {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+.meme-form {
+  display: flex;
+  justify-content: space-evenly;
+}
+.input {
+  padding: 0.25em 0.5em;
+  border-radius: 5px;
+  border: 2px solid #0d324d;
+  box-shadow: 3px 4px #9da2ab;
+}
+.btn-gen {
+  padding: 0.5em 1em;
+  background-color: #0d324d;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.meme > h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.meme > .bottom {
+  bottom: 0;
+}
+
+.meme > .top {
+  top: 0;
+}
+
+.footer {
+  background-color: #9da2ab;
+  color: #ffffff;
+  text-align: center;
+  padding: 0em 0.5em;
+  margin-top: 1em;
+  position: fixed;
+  bottom: 0em;
+  left: 0em;
+  width: 100%;
+  font-size: 1rem;
+}
+.icons {
+  font-size: 1.25rem;
+  padding: 0em 1em;
+  color: #ffffff;
+}
+.reactIcon {
+  color: #0d324d;
+  font-weight: bold;
+}
+.icons:hover {
+  color: #0d324d;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+@media (min-width: 600px) {
+  .App {
+    width: 700px;
+  }
+  .input {
+    padding: 1em 3em;
+  }
+  .img-meme {
+    min-width: 300px;
+    max-width: 700px;
+    max-height: 300px;
+  }
+  .meme-generator {
+    position: relative;
+    top: 8em;
+  }
+  .footer {
+    font-size: 1.125rem;
+  }
+  .btn-gen {
+    padding: 0.5em 2em;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
